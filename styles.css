@@ -1,0 +1,580 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "topnav"
+    "main"
+    "footer";
+    background-color: rgb(0, 139, 139);
+    margin: 0;
+    padding: 0;
+
+}
+/*=================================================================================================================*/
+.header {
+    display: grid;
+    grid-area: header;
+    padding: 2em 0;
+    color: black;
+    background-color: 0;    
+}
+.title {
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 4em;
+     /*background: url(https://media.gcflearnfree.org/global/layout/lesson/chevron-2018-2.png) no-repeat;      prufa */ 
+}
+.title2 {
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    margin: 0;
+    font-size: 1.1em;
+    padding-top: 0em;
+}
+/*=================================================================================================================*/
+.main {
+    display: grid;
+    grid-area: main;
+    background-color: white;
+    font-family: 'M PLUS 1 Code', sans-serif;
+    grid-template-columns: 1fr;   
+    margin: 0;
+    padding: 0 1em 2.5em;
+}
+.main h3 {
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 1px;
+    font-size: 2em;
+    margin: 0;
+    padding: 1.3em 0em .9em;
+    justify-content: center;
+    text-align: center;
+}
+.main h4 {
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    margin: 0;
+    padding: .4em 0 .5em;
+    text-align: center;
+}
+.content {
+    padding: 0 1em ;
+    padding-bottom: 2em;
+    border-bottom: solid 3px rgb(0, 139, 139);
+    text-align: left;
+}
+.content:last-child {
+    border-bottom: 0;
+}
+.main p {
+    display: flex;
+    margin: 0;
+    padding-bottom: 1em;
+    font-size: 1em;  
+}
+.main ul li {
+    padding-bottom: 1em;
+}
+.michael {
+    display: grid;
+    justify-content: center;
+    padding-top: 3em;
+}
+.main audio {
+    display: block;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 0em;
+    margin-left: auto;
+    margin-right: auto;
+}
+.aboveVid {
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    font-style: italic;
+    text-align: center;
+}
+.harsof ul li {
+    list-style-type: square;
+}
+.comtypes ul li {
+    padding-bottom: 1em;
+    list-style-type: initial;
+}
+.pcmac h3 {
+    letter-spacing: 1.5px;
+}
+/*=================================================================================================================*/
+.footer {
+    display: grid;
+    grid-area: footer;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "map"
+    "fh4"
+    "fdl"
+    "verk";
+    background-color: rgb(226, 29, 56);
+    justify-content: center;
+    padding: 0 1em 4em 1em;
+    color: rgb(255, 255, 255);
+}
+.footer p {
+    display: grid;
+    grid-area: fh4;
+    justify-content: center;
+    font-family: 'Russo One', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: .2px;
+    padding: 0;
+    margin-top: 1.7em;
+}
+.footer dt {
+    font-family:'Russo One', sans-serif;
+    letter-spacing: .3px;
+}
+.footer dd {
+    font-family:'M PLUS 1 Code', sans-serif;
+}
+.footer dl {
+    display: grid;
+    grid-area: fdl;
+    justify-content: center;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+    background-image: url(../Verkefni-7/img/Icon/Icon\ C.png) no-repeat;
+}
+.map {
+    display: grid;
+    grid-area: map;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: .8em;
+}
+.verkefni {
+    display: grid;
+    grid-area: verk;
+    justify-content: center;
+    font-family:'M PLUS 1 Code', sans-serif;
+    font-size: 1em;
+    padding-top: .3em;
+    border-top: 2px solid white;
+    margin: 3em;
+
+}
+
+/*=================================================================================================================*/
+
+/*---------------------------------------------
+    NAVigation
+---------------------------------------------*/
+.topnav {
+    display: grid;
+    grid-area: topnav;
+    background-color: black;  
+}
+.topnav ul {
+    display: block;
+    padding: 0 .5em;
+    margin: 0;
+    list-style: none; 
+    
+}
+.topnav li {
+    border: 0;
+    border-bottom: 1px solid rgb(226, 29, 56); 
+    padding: 0;
+    margin:0;
+}
+.topnav a {
+    display: block;    
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: .4em 1em; 
+    letter-spacing: .2px;
+    font-family: 'Russo One', sans-serif;
+}
+.topnav li:last-child {
+    border: 0;
+}
+.topnav a:hover,
+.topnav a:active {
+  color: black !important;
+  background-color: rgb(226, 29, 56);
+  }
+
+/*--------------------------------------------------------
+    Image sector
+--------------------------------------------------------*/
+img {
+    max-width: 100%;
+    height: auto;   
+}
+.main img {
+    margin-bottom: 1em;
+}
+figure {
+    margin: 0;
+    padding: 0;
+}
+.hard, .soft {
+    max-width: 85%;
+    display: block;
+    margin-left: auto;
+    
+}
+.images {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*--------------------------------------------------------
+    Google map & Video sector
+--------------------------------------------------------*/
+/* Rétt hlutfall youtube > iframe  (.gluggi) 
+   óskuð breidd deilt í upphaflega breidd = n% 
+   til að finna rétta hæð : n%  * upphafleg hæð 
+*/
+
+/* 20em = 320px*/
+.gluggi {
+    display: block;
+    width:15em; /*was 300px */ 
+    height:10.5em; /*168px;*/ 
+    margin: auto;
+}
+
+/*--------------------------------------------------------
+    Viðmið - breakpoints 25em = 400px + 
+--------------------------------------------------------*/
+@media screen and (min-width: 25em) {
+    .gluggi {
+        width:19em; /*was 368px;*/ 
+        height:13em; /*207px;*/ 
+    }
+    .title {
+        font-size: 5em;
+    }
+    .title2 {
+        font-size: 1.3em;
+        padding-top: 0;
+    }
+    .map {
+        margin-top: 3.3em;
+    }
+    
+}
+
+
+/*--------------------------------------------------------
+    Viðmið - breakpoints 30em = 480px + 
+--------------------------------------------------------*/
+@media screen and (min-width: 30em) {
+    .title {
+        font-size: 6em;
+    }
+    .title2 {
+        font-size: 1.5em;
+    }
+    .gluggi {
+        width:23em;     /*was 448px*/
+        height:15.75em; /*252px;*/ 
+    }
+    .map {
+        width: 380px;    
+        height: 300px;
+    }
+    .footer p {
+        font-size: 1.7em;
+    }
+    .hard, .soft {
+        margin-right: 1.5em;
+        max-width: 80%;
+    }
+       
+}
+
+
+
+/*--------------------------------------------------------
+    Viðmið - breakpoints 37.5em = 600px + 
+--------------------------------------------------------*/
+@media screen and (min-width: 37.5em) {
+    .gluggi {
+        width:29em;     /*560px;*/
+        height:16em; /*315px;*/
+    }
+    .title {
+        font-size: 7.5em;
+        padding: 0;
+        margin: 0;
+        
+    }
+    .title2 {
+        font-size: 1.8em;
+        letter-spacing: .8px;
+        margin: 0 0 .5em 0;
+        padding: 0;
+    }
+    .topnav {
+        font-size: 1.2em;
+    }
+    .header {
+        padding: 3em 0;
+    }
+    .main h3 {
+        font-size: 2.1em;
+        letter-spacing: 1.2px;
+    }
+    .main h4 {
+        font-size: 1.7em;
+    }
+    .main p {
+        font-size: 1.1em;
+    }
+    .main ul {
+        font-size: 1.1em;
+
+    }
+    .hard, .soft {
+        margin-right: 3.5em;
+        max-width: 75%;
+    }
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "map fh4"
+        "map fdl"
+        "verk verk";
+        font-size: 1em;
+    }
+    .footer dt {
+        letter-spacing: .3px;
+    }
+    .footer p {
+        font-size: 1.6em;
+    }
+    .footer dl {
+        font-size: 1.1em;
+    }
+    .footer dl, .footer p {
+        margin-bottom: 0;
+        padding-top: 0;
+    }
+    .map {
+        width: 300px;    
+        height: 300px;
+    }
+    .aboveVid {
+        text-align: center;
+    }
+}
+
+/*--------------------------------------------------------
+    Viðmið - breakpoints 48em = 760px +
+--------------------------------------------------------*/
+@media screen and (min-width:48em) {
+    .gluggi {
+        width:35em; /*736px;*/ 
+        height:22em; /*414px;*/ 
+    }
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "toplink"
+        "header"
+        "topnav"
+        "main"
+        "footer";
+    }
+    .topnav {
+        margin: 2em 2.5em 1em;
+        padding: 0;
+    } 
+    .topnav ul {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        padding: 0;
+    }
+    .topnav li {
+        border: 0;
+        border-right: 2px solid rgb(226, 29, 56);
+        margin-top: auto;
+        margin-bottom: auto;
+    } 
+    .topnav a {
+        padding: .2em;
+
+    }
+    .header {
+        padding: 6em 0;
+    }
+    .main h4 {
+        padding: 1.5em 0 .7em;
+    }
+    .images {
+        display: block;
+        justify-content: center;
+        max-width: 80%;
+    }
+    .hard, .soft {
+        display: block;
+        justify-content: center;
+        max-width: 65%;
+        margin: auto;
+    }
+    .main {
+        margin: 0 3em;
+        padding-bottom: 5em;
+    }
+    .map {
+        width: 400px;    
+        height: 400px;
+        margin-left: 2em;
+        margin-right: 0;
+    }
+    /*======================
+        NAV V2 - Links   
+    =======================*/
+    .toplink {
+        display: grid;
+        grid-area: toplink;
+        background-color: black;  
+    }
+    .toplink ul {
+        display: block;
+        padding: 0 1em;
+        margin: 0;
+        list-style: none; 
+        
+    }
+    .toplink li {
+        border-right: 2px solid rgb(226, 29, 56);
+        margin-top: auto;
+        margin-bottom: auto;
+        padding: 0;
+        margin:0;
+    }
+    .toplink a {
+        display: block;    
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        padding: .4em 1em; 
+        letter-spacing: .2px;
+        font-family: 'Russo One', sans-serif;
+    }
+    .toplink li:last-child {
+        border: 0;
+    }
+    .toplink a:hover,
+    .toplink a:active {
+      color: black !important;
+      background-color: rgb(226, 29, 56);
+      }   
+    .toplink ul {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;  
+    }
+
+}
+
+/*--------------------------------------------------------
+    Viðmið - breakpoints 60em = 960px +
+--------------------------------------------------------*/
+@media screen and (min-width:60em){
+    .gluggi {
+        width:37em; /*950px;*/ 
+        height:24em; /*534px;*/ 
+    }
+    .main {
+        margin: 0 8em;
+        padding: 7em ;
+    }
+    .topnav {
+        margin: 2em 6.7em 1em;
+        padding: 0;
+    } 
+    .topnav a {
+        padding: 1em;
+    }
+}
+
+
+
+/*--------------------------------------------------------
+    Viðmið - breakpoints 80em = 1280px +
+--------------------------------------------------------*/
+
+@media  screen and (min-width: 80em) {
+    .title {
+        font-size: 11em;
+        font-weight: 500;
+    }
+    .title2 {
+        font-size: 2.5em;
+        font-weight: 300;
+    }
+    .topnav {
+        margin: 2em 18.3em 1em;
+        padding: 0;
+    } 
+    .topnav a {
+        padding: 1em;
+    }
+
+    .images {
+        max-width: 75%;
+    }
+    .hard, .soft {
+        max-width: 68%;
+    }
+    .main {
+        margin: 0 22em ;
+        padding: 0 10em 8em;
+    }
+    main p {
+        font-size: 20px;
+    }
+    main h3 {
+        font-size: 2em;
+    }
+    .gluggi { 
+        width: 40em; /*1400px;*/
+        height:27em; /*788px;*/ 
+    }
+    .footer {
+        padding: 0 25em;
+    }
+    .footer dl {
+        font-size: 1.5em;
+    }
+    .footer p {
+        font-size: 2.2em;
+    }
+    .verkefni {
+        font-size: .8em;
+    }
+    .map {
+        width: 400px;    
+        height: 400px;
+        margin-left: 2em;
+        margin-right: 0;
+    }
+} 
